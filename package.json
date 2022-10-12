@@ -1,0 +1,24 @@
+{
+  "name": "lintvcc",
+  "version": "1.0.0",
+  "description": "Node Package.JSON with the appropriate ESLint settings for Linting VCC JavaScript code.",
+  "main": "vccLint.js",
+  "scripts": {
+    "vcc-lint": "npx eslint ./src --format json --output-file result.json node -p \"require('./node_modules/eslint/lib/cli-engine/formatters/unix.js')(require('./result.json'))\"",
+    "lint": "npm run lint:lwc",
+    "lint:lwc": "eslint force-app/main/default/lwc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VAHC BAH Development Team",
+  "license": "ISC",
+  "dependencies": {
+    "@salesforce/eslint-config-lwc": "^3.3.3",
+    "csvtoxlsxconverter": "^1.6.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.25.0",
+    "jest": "^29.1.2",
+    "json-2-csv": "^3.17.2",
+    "open-file-explorer": "^1.0.2",
+    "shelljs": "^0.8.5"
+  }
+}

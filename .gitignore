@@ -1,0 +1,4 @@
+node_modules/*
+javascriptComponents/*
+eslint-results.csv
+.vscode/settings.json
