@@ -4,7 +4,7 @@
   "description": "Node Package.JSON with the appropriate ESLint settings for Linting VCC JavaScript code.",
   "main": "vccLint.js",
   "scripts": {
-    "eslint-report": "node vccLint.js",
+    "eslint-csv": "node vccLint.js",
     "lint": "npm run lint:lwc",
     "lint:lwc": "eslint force-app/main/default/lwc",
     "test": "echo \"Error: no test specified\" && exit 1"
